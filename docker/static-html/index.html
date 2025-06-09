@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>🦖 DinoWorld</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+        color: #f0f0f0;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      header {
+        text-align: center;
+        padding: 50px 20px;
+        animation: fadeInDown 1s ease-out;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+        color: #76ff03;
+        text-shadow: 0 0 10px #76ff03, 0 0 20px #64dd17;
+        animation: pulse 2s infinite;
+      }
+
+      .dino-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 40px 20px;
+      }
+
+      .dino-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 2px solid #76ff03;
+        border-radius: 15px;
+        width: 280px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(118, 255, 3, 0.3);
+        transition: transform 0.3s ease;
+      }
+
+      .dino-card:hover {
+        transform: scale(1.05);
+      }
+
+      .dino-card h2 {
+        color: #64dd17;
+        margin-bottom: 10px;
+      }
+
+      .dino-card p {
+        line-height: 1.5;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .footer a {
+        background: #76ff03;
+        padding: 12px 25px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #0f2027;
+        font-weight: bold;
+        box-shadow: 0 0 15px #76ff03;
+        transition: background 0.3s;
+      }
+
+      .footer a:hover {
+        background: #64dd17;
+      }
+
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          text-shadow: 0 0 10px #76ff03, 0 0 20px #64dd17;
+        }
+        50% {
+          text-shadow: 0 0 20px #b2ff59, 0 0 30px #76ff03;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to DinoWorld 🦕</h1>
+    </header>
+
+    <section class="dino-container">
+      <div class="dino-card">
+        <h2>Tyrannosaurus Rex</h2>
+        <p>
+          The T-Rex was one of the largest land carnivores of all time. Its name
+          means "Tyrant Lizard King".
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Triceratops</h2>
+        <p>
+          This three-horned herbivore used its frill and horns for defense
+          against predators like T-Rex.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Velociraptor</h2>
+        <p>
+          Small but swift, the Velociraptor hunted in packs and had a deadly
+          sickle-shaped claw.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Brachiosaurus</h2>
+        <p>
+          This long-necked giant could reach treetops and weighed up to 50 tons!
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Stegosaurus</h2>
+        <p>
+          Known for its spiked tail and bony back plates, it used these features
+          for defense and temperature control.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Spinosaurus</h2>
+        <p>
+          One of the largest carnivorous dinosaurs, it had a sail-like fin and
+          was likely a strong swimmer.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Ankylosaurus</h2>
+        <p>
+          Armored like a tank, it had a club-like tail to smash predators. It
+          was a true prehistoric tank.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Pteranodon</h2>
+        <p>
+          Though not a true dinosaur, this flying reptile ruled the skies with a
+          wingspan over 20 feet.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Allosaurus</h2>
+        <p>
+          A fearsome predator before T-Rex, it hunted in groups and had sharp
+          claws and teeth.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Pachycephalosaurus</h2>
+        <p>
+          Famous for its thick, domed skull, used for head-butting rivals during
+          battles.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Parasaurolophus</h2>
+        <p>
+          Known for its long, curved crest, it may have used it to make deep
+          calls across the forest.
+        </p>
+      </div>
+      <div class="dino-card">
+        <h2>Ichthyosaurus</h2>
+        <p>
+          This dolphin-like marine reptile lived in the seas and had large eyes
+          for hunting in the dark.
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      <a href="#">Explore More Dinos</a>
+      <p style="margin-top: 20px; font-size: 0.9rem; color: #ccc">
+        Developed by <strong>Cisco</strong> | Version: <strong>V1.0.0</strong>
+      </p>
+    </div>
+  </body>
+</html>
